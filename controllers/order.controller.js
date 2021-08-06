@@ -95,7 +95,7 @@ exports.postOrder = async (req, res, next) => {
 				transaction: t,
 			});
 
-			res.json({
+			res.status(201).json({
 				status: 'success',
 				orderId: order.order_id,
 				userId: order.user_id,
@@ -126,16 +126,14 @@ exports.getAllOrders = async (req, res, next) => {
 			attributes: ['order_id', 'delivery_address', 'delivered', 'updated_at'],
 			include: [
 				{
-					model: User,
-					required: true,
-					attributes: ['user_name'],
-				},
-				{
 					model: Item,
 					required: true,
-					as: 'order_item',
-					attributes: {
-						exclude: ['created_at', 'updated_at', 'stock'],
+					as: 'Items',
+					attributes: ['item_id', 'item_name'],
+					through: {
+						model: OrderItem,
+						as: 'ItemDetails',
+						attributes: ['quantity', 'unit_price'],
 					},
 				},
 			],
@@ -207,9 +205,12 @@ exports.getOrder = async (req, res, next) => {
 				{
 					model: Item,
 					required: true,
-					as: 'order_item',
-					attributes: {
-						exclude: ['created_at', 'updated_at', 'stock'],
+					as: 'Items',
+					attributes: ['item_id', 'item_name'],
+					through: {
+						model: OrderItem,
+						as: 'ItemDetails',
+						attributes: ['quantity', 'unit_price'],
 					},
 				},
 			],

@@ -15,17 +15,9 @@
 						"header": [],
 						"url": {
 							"raw": "127.0.0.1:3000/item/1",
-							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
-							],
+							"host": ["127", "0", "0", "1"],
 							"port": "3000",
-							"path": [
-								"item",
-								"1"
-							]
+							"path": ["item", "1"]
 						}
 					},
 					"response": []
@@ -37,16 +29,9 @@
 						"header": [],
 						"url": {
 							"raw": "127.0.0.1:3000/item",
-							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
-							],
+							"host": ["127", "0", "0", "1"],
 							"port": "3000",
-							"path": [
-								"item"
-							]
+							"path": ["item"]
 						}
 					},
 					"response": []
@@ -67,16 +52,9 @@
 						},
 						"url": {
 							"raw": "127.0.0.1:3000/item",
-							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
-							],
+							"host": ["127", "0", "0", "1"],
 							"port": "3000",
-							"path": [
-								"item"
-							]
+							"path": ["item"]
 						}
 					},
 					"response": []
@@ -88,7 +66,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"userId\": 1,\r\n    \"item\": {\r\n        \"item_name\": \"Samsung Galaxy 2\",\r\n        \"unit_price\": 10000,\r\n        \"stock\": 14\r\n    }\r\n}",
+							"raw": "{\r\n    \"userId\": 1,\r\n    \"item\": {\r\n        \"item_name\": \"Samsung Galaxy 2\",\r\n        \"unit_price\": 100,\r\n        \"stock\": 14\r\n    }\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -97,17 +75,9 @@
 						},
 						"url": {
 							"raw": "127.0.0.1:3000/item/1",
-							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
-							],
+							"host": ["127", "0", "0", "1"],
 							"port": "3000",
-							"path": [
-								"item",
-								"1"
-							]
+							"path": ["item", "1"]
 						}
 					},
 					"response": []
@@ -127,18 +97,10 @@
 							}
 						},
 						"url": {
-							"raw": "127.0.0.1:3000/item/14",
-							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
-							],
+							"raw": "127.0.0.1:3000/item/1",
+							"host": ["127", "0", "0", "1"],
 							"port": "3000",
-							"path": [
-								"item",
-								"14"
-							]
+							"path": ["item", "1"]
 						}
 					},
 					"response": []
@@ -155,7 +117,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"userId\": 3,\r\n    \"deliveryAddress\": \"Patan Durbar Square\",\r\n    \"items\": [\r\n        {\r\n            \"item_id\": 1,\r\n            \"quantity\": 1\r\n        },\r\n        {\r\n            \"item_id\": 2,\r\n            \"quantity\": 2\r\n        }\r\n    ]\r\n}",
+							"raw": "{\r\n    \"userId\": 2,\r\n    \"deliveryAddress\": \"Dhapakhel\",\r\n    \"items\": [\r\n        {\r\n            \"item_id\": 1,\r\n            \"quantity\": 1\r\n        },\r\n        {\r\n            \"item_id\": 2,\r\n            \"quantity\": 2\r\n        }\r\n    ]\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -164,16 +126,9 @@
 						},
 						"url": {
 							"raw": "127.0.0.1:3000/order",
-							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
-							],
+							"host": ["127", "0", "0", "1"],
 							"port": "3000",
-							"path": [
-								"order"
-							]
+							"path": ["order"]
 						}
 					},
 					"response": []
@@ -188,7 +143,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"userId\": 3\r\n}",
+							"raw": "{\r\n    \"userId\": 2\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -197,16 +152,9 @@
 						},
 						"url": {
 							"raw": "127.0.0.1:3000/order",
-							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
-							],
+							"host": ["127", "0", "0", "1"],
 							"port": "3000",
-							"path": [
-								"order"
-							]
+							"path": ["order"]
 						}
 					},
 					"response": []
@@ -230,17 +178,9 @@
 						},
 						"url": {
 							"raw": "127.0.0.1:3000/order/4",
-							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
-							],
+							"host": ["127", "0", "0", "1"],
 							"port": "3000",
-							"path": [
-								"order",
-								"4"
-							]
+							"path": ["order", "4"]
 						}
 					},
 					"response": []
@@ -261,17 +201,9 @@
 						},
 						"url": {
 							"raw": "127.0.0.1:3000/order/2",
-							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
-							],
+							"host": ["127", "0", "0", "1"],
 							"port": "3000",
-							"path": [
-								"order",
-								"2"
-							]
+							"path": ["order", "2"]
 						}
 					},
 					"response": []
@@ -300,16 +232,9 @@
 						},
 						"url": {
 							"raw": "127.0.0.1:3000/user",
-							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
-							],
+							"host": ["127", "0", "0", "1"],
 							"port": "3000",
-							"path": [
-								"user"
-							]
+							"path": ["user"]
 						}
 					},
 					"response": []
@@ -330,16 +255,9 @@
 						},
 						"url": {
 							"raw": "127.0.0.1:3000/user",
-							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
-							],
+							"host": ["127", "0", "0", "1"],
 							"port": "3000",
-							"path": [
-								"user"
-							]
+							"path": ["user"]
 						}
 					},
 					"response": []

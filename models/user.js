@@ -11,7 +11,7 @@ module.exports = (sequelize, DataTypes) => {
 		 */
 		static associate(models) {
 			// define association here
-			User.hasMany(models.Order);
+			User.hasMany(models.Order, { foreignKey: 'user_id' });
 		}
 	}
 	User.init(
@@ -50,7 +50,6 @@ module.exports = (sequelize, DataTypes) => {
 					console.log(u.password);
 					const salt = await bcrypt.genSalt(8);
 					u.password = await bcrypt.hash(u.password, salt);
-					// u.setDataValue('password', 'kathmandu');
 				},
 			},
 		}

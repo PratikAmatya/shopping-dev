@@ -51,7 +51,7 @@ exports.postItem = async (req, res, next) => {
 				transaction: t,
 			});
 
-			res.json({ status: 'success', createdItems });
+			res.status(201).json({ status: 'success', createdItems });
 		});
 	} catch (err) {
 		next(err);
